@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 DATABASE = 'users.db'
-print(f"📂 Using database at: {os.path.abspath(DATABASE)}")
+print(f" Using database at: {os.path.abspath(DATABASE)}")
 
 def get_db_connection():
     conn = sqlite3.connect(DATABASE)
